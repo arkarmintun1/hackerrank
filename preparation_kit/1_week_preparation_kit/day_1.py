@@ -1,10 +1,12 @@
 import re
 
-# Input - an array of integers
-# Output - decimal values of each fraction for positive, negative and zero elements
-
 
 def plusMinus(arr):
+    """
+    Input - an array of integers
+
+    Output - decimal values of each fraction for positive, negative and zero elements
+    """
     positive = 0
     negative = 0
     neutral = 0
@@ -34,9 +36,12 @@ plusMinus([1, 2, 3, -1, -2, -3, 0, 0])
 # 0.250000
 
 
-# Input - an array of integers
-# Output - min and max values that can be calculated by summing exactly four of the five integers
 def miniMaxSum(arr):
+    """
+    Input - an array of integers
+
+    Output - min and max values that can be calculated by summing exactly four of the five integers
+    """
     min = sum(arr)
     max = 0
     for i, val in enumerate(arr):
@@ -58,9 +63,12 @@ miniMaxSum([7, 69, 2, 221, 8974])
 # Output - 299 9271
 
 
-# Input - Time in 12 hour AM/PM format
-# Output - Time in 24 hour format
 def timeConversion(s):
+    """
+    Input - Time in 12 hour AM/PM format
+
+    Output - Time in 24 hour format
+    """
     morning = re.findall('AM$', s)
     evening = re.findall('PM$', s)
     hour = s[:2]
